@@ -7,7 +7,7 @@ class BrowzbotDrivingTests {
 
     @BeforeEach
     void setup() {
-        bot = new Browzbot("firefoxs");
+        bot = new Browzbot("firefox");
     }
 
     void playAndOutputToConsole(String instructionText) {
