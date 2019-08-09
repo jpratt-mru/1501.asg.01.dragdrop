@@ -1,0 +1,36 @@
+	private void runCoolorsTask() {
+		browzbot.openWebpage("https://coolors.co/app");
+		browzbot.enterEscape();
+		// browZbot.clickById("image-picker-btn");
+	}
+
+	private void runDonjonTask() {
+		browzbot.openWebpage("https://donjon.bin.sh/5e/spells/");
+		browzbot.selectFromDropdown("class", "Druid");
+		browzbot.selectFromDropdown("concentration", "yes");
+		browzbot.clickByClass("span.sort_icon");
+		browzbot.clickByClass("span.sort_icon");
+		browzbot.takeScreenshot("donjon.png");
+	}
+
+	private void runWestJetTask() {
+		browzbot.openWebpage("https://www.westjet.com/en-ca/travel-info/flight-status");
+		browzbot.fillFormField("flight-number", "737");
+		browzbot.clickButton("Search");
+		browzbot.takeScreenshot("westjet.png");
+	}
+
+	private void runNiniteTask() {
+		browzbot.openWebpage("https://ninite.com/");
+		browzbot.clickByValue("skype");
+		browzbot.clickByValue("7zip");
+		browzbot.clickByClass("button.btn.btn-primary.btn-lg.js-homepage-get-installer");
+		browzbot.takeScreenshot("ninite.png");
+	}
+
+1. Subtask 1: go to www.mymru.ca
+   > 1. Subtask 2: click on the "Username Lookup" link
+   > 1. Subtask 3: enter a first name in the First Name field
+   > 1. Subtask 4: enter a last name in the Last Name field
+   > 1. Subtask 5: enter a student ID in the ID field
+   > 1. Subtask 6: click the authorize button
